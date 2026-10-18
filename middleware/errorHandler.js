@@ -29,7 +29,7 @@ function toApiError(error) {
     // MongoDB unique index violation
     if (error.code === 11000) {
         const duplicateFields = Object.keys(error.keyValue || {}).filter((field) => field !== 'user');
-        return new ApiError(409, `${duplicateFields.join(', ') || 'Record'} already exists`);
+        return new ApiError(409, `A record with this ${duplicateFields.join(', ') || 'value'} already exists`);
     }
 
     return new ApiError(500, 'Internal server error');

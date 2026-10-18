@@ -5,6 +5,7 @@ const notFound = require('./middleware/notFound');
 const errorHandler = require('./middleware/errorHandler');
 const healthRoutes = require('./routes/healthRoutes');
 const userRoutes = require('./routes/userRoutes');
+const employeeRoutes = require('./routes/employeeRoutes');
 
 // Builds the Express app without starting it, so tests can use it directly.
 // Order matters: security headers -> logging -> body parsing -> routes -> 404 -> error handler.
@@ -18,7 +19,7 @@ app.use(express.json({ limit: '10kb' })); // small limit: no endpoint needs a bi
 
 app.use('/health', healthRoutes);
 app.use('/api/v1/user', userRoutes);
-// Milestone 3: app.use('/api/v1/emp', employeeRoutes);
+app.use('/api/v1/emp', employeeRoutes);
 
 app.use(notFound);
 app.use(errorHandler);

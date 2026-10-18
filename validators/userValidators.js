@@ -45,21 +45,25 @@ const signupRules = checkExact(
 // Accepts { username, password } OR { email, password }. Only presence/type is checked here:
 // the password policy is NOT re-checked at login (that would leak the policy to attackers and
 // lock out accounts created under an older policy).
-const loginRules = checkExact(
-    [
-        body('username').optional().isString().withMessage('username must be a string').trim().toLowerCase(),
-        body('email').optional().isString().withMessage('email must be a string').trim().toLowerCase(),
-        body('password')
-            .exists({ values: 'falsy' }).withMessage('password is required').bail()
-            .isString().withMessage('password must be a string'),
-        body().custom((requestBody) => {
-            if (!requestBody || (!requestBody.username && !requestBody.email)) {
-                throw new Error('username or email is required');
-            }
-            return true;
-        }),
-    ],
-    { message: 'Unexpected field in request body' }
-);
+// (The whole-body rule sits OUTSIDE checkExact: a body() rule counts every field as "known",
+// which would silently switch off the unexpected-field check.)
+const loginRules = [
+    checkExact(
+        [
+            body('username').optional().isString().withMessage('username must be a string').trim().toLowerCase(),
+            body('email').optional().isString().withMessage('email must be a string').trim().toLowerCase(),
+            body('password')
+                .exists({ values: 'falsy' }).withMessage('password is required').bail()
+                .isString().withMessage('password must be a string'),
+        ],
+        { message: 'Unexpected field in request body' }
+    ),
+    body().custom((requestBody) => {
+        if (!requestBody || (!requestBody.username && !requestBody.email)) {
+            throw new Error('username or email is required');
+        }
+        return true;
+    }),
+];
 
 module.exports = { signupRules, loginRules };
