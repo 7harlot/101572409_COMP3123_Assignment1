@@ -1,0 +1,93 @@
+{"database":"comp3123_assignment1","level":"info","message":"Connected to MongoDB","timestamp":"2026-10-16T17:50:03.497Z"}
+{"environment":"development","level":"info","message":"Server started","port":3000,"timestamp":"2026-10-16T17:50:03.502Z"}
+{"durationMs":4,"ip":"127.0.0.1","level":"info","message":"HTTP request","method":"GET","path":"/health","status":200,"timestamp":"2026-10-16T17:50:03.518Z"}
+{"durationMs":1,"ip":"127.0.0.1","level":"info","message":"HTTP request","method":"GET","path":"/health","status":200,"timestamp":"2026-10-16T17:50:04.262Z"}
+{"level":"info","message":"Signup succeeded","timestamp":"2026-10-16T17:50:04.723Z","userId":"6ad263cc04263f760c5bbb4f","username":"usera_demo"}
+{"durationMs":416,"ip":"127.0.0.1","level":"info","message":"HTTP request","method":"POST","path":"/api/v1/user/signup","status":201,"timestamp":"2026-10-16T17:50:04.725Z"}
+{"level":"info","message":"Signup succeeded","timestamp":"2026-10-16T17:50:05.104Z","userId":"6ad263cc04263f760c5bbb50","username":"userb_demo"}
+{"durationMs":354,"ip":"127.0.0.1","level":"info","message":"HTTP request","method":"POST","path":"/api/v1/user/signup","status":201,"timestamp":"2026-10-16T17:50:05.105Z"}
+{"level":"info","message":"Signup succeeded","timestamp":"2026-10-16T17:50:05.489Z","userId":"6ad263cd04263f760c5bbb51","username":"newuser_mvb9j8zr"}
+{"durationMs":355,"ip":"127.0.0.1","level":"info","message":"HTTP request","method":"POST","path":"/api/v1/user/signup","status":201,"timestamp":"2026-10-16T17:50:05.491Z"}
+{"field":"username","level":"warn","message":"Signup rejected: duplicate","timestamp":"2026-10-16T17:50:05.515Z"}
+{"durationMs":5,"ip":"127.0.0.1","level":"warn","message":"HTTP request","method":"POST","path":"/api/v1/user/signup","status":409,"timestamp":"2026-10-16T17:50:05.516Z"}
+{"field":"email","level":"warn","message":"Signup rejected: duplicate","timestamp":"2026-10-16T17:50:05.538Z"}
+{"durationMs":7,"ip":"127.0.0.1","level":"warn","message":"HTTP request","method":"POST","path":"/api/v1/user/signup","status":409,"timestamp":"2026-10-16T17:50:05.542Z"}
+{"fields":["email"],"level":"warn","message":"Validation failed","method":"POST","path":"/api/v1/user/signup","timestamp":"2026-10-16T17:50:05.560Z"}
+{"durationMs":2,"ip":"127.0.0.1","level":"warn","message":"HTTP request","method":"POST","path":"/api/v1/user/signup","status":400,"timestamp":"2026-10-16T17:50:05.561Z"}
+{"fields":["password"],"level":"warn","message":"Validation failed","method":"POST","path":"/api/v1/user/signup","timestamp":"2026-10-16T17:50:05.579Z"}
+{"durationMs":2,"ip":"127.0.0.1","level":"warn","message":"HTTP request","method":"POST","path":"/api/v1/user/signup","status":400,"timestamp":"2026-10-16T17:50:05.580Z"}
+{"fields":["username","email","password"],"level":"warn","message":"Validation failed","method":"POST","path":"/api/v1/user/signup","timestamp":"2026-10-16T17:50:05.598Z"}
+{"durationMs":2,"ip":"127.0.0.1","level":"warn","message":"HTTP request","method":"POST","path":"/api/v1/user/signup","status":400,"timestamp":"2026-10-16T17:50:05.599Z"}
+{"fields":["role"],"level":"warn","message":"Validation failed","method":"POST","path":"/api/v1/user/signup","timestamp":"2026-10-16T17:50:05.618Z"}
+{"durationMs":3,"ip":"127.0.0.1","level":"warn","message":"HTTP request","method":"POST","path":"/api/v1/user/signup","status":400,"timestamp":"2026-10-16T17:50:05.619Z"}
+{"durationMs":2,"ip":"127.0.0.1","level":"warn","message":"HTTP request","method":"POST","path":"/api/v1/user/signup","status":400,"timestamp":"2026-10-16T17:50:05.637Z"}
+{"level":"info","message":"Login succeeded","timestamp":"2026-10-16T17:50:06.042Z","userId":"6ad263cc04263f760c5bbb4f"}
+{"durationMs":395,"ip":"127.0.0.1","level":"info","message":"HTTP request","method":"POST","path":"/api/v1/user/login","status":200,"timestamp":"2026-10-16T17:50:06.047Z"}
+{"level":"info","message":"Login succeeded","timestamp":"2026-10-16T17:50:06.438Z","userId":"6ad263cc04263f760c5bbb50"}
+{"durationMs":372,"ip":"127.0.0.1","level":"info","message":"HTTP request","method":"POST","path":"/api/v1/user/login","status":200,"timestamp":"2026-10-16T17:50:06.439Z"}
+{"identifier":"usera_demo","level":"warn","message":"Login failed","reason":"wrong password","timestamp":"2026-10-16T17:50:06.828Z"}
+{"durationMs":372,"ip":"127.0.0.1","level":"warn","message":"HTTP request","method":"POST","path":"/api/v1/user/login","status":401,"timestamp":"2026-10-16T17:50:06.830Z"}
+{"identifier":"nobody_here","level":"warn","message":"Login failed","reason":"unknown user","timestamp":"2026-10-16T17:50:07.207Z"}
+{"durationMs":361,"ip":"127.0.0.1","level":"warn","message":"HTTP request","method":"POST","path":"/api/v1/user/login","status":401,"timestamp":"2026-10-16T17:50:07.208Z"}
+{"fields":["password","body"],"level":"warn","message":"Validation failed","method":"POST","path":"/api/v1/user/login","timestamp":"2026-10-16T17:50:07.228Z"}
+{"durationMs":2,"ip":"127.0.0.1","level":"warn","message":"HTTP request","method":"POST","path":"/api/v1/user/login","status":400,"timestamp":"2026-10-16T17:50:07.229Z"}
+{"employeeId":"6ad263cf04263f760c5bbb52","level":"info","message":"Employee created","timestamp":"2026-10-16T17:50:07.257Z","userId":"6ad263cc04263f760c5bbb4f"}
+{"durationMs":11,"ip":"127.0.0.1","level":"info","message":"HTTP request","method":"POST","path":"/api/v1/emp/employees","status":201,"timestamp":"2026-10-16T17:50:07.258Z","userId":"6ad263cc04263f760c5bbb4f"}
+{"durationMs":7,"ip":"127.0.0.1","level":"info","message":"HTTP request","method":"GET","path":"/api/v1/emp/employees","status":200,"timestamp":"2026-10-16T17:50:07.288Z","userId":"6ad263cc04263f760c5bbb4f"}
+{"durationMs":5,"ip":"127.0.0.1","level":"info","message":"HTTP request","method":"GET","path":"/api/v1/emp/employees/6ad263cf04263f760c5bbb52","status":200,"timestamp":"2026-10-16T17:50:07.310Z","userId":"6ad263cc04263f760c5bbb4f"}
+{"employeeId":"6ad263cf04263f760c5bbb52","fields":["salary","position"],"level":"info","message":"Employee updated","timestamp":"2026-10-16T17:50:07.338Z","userId":"6ad263cc04263f760c5bbb4f"}
+{"durationMs":12,"ip":"127.0.0.1","level":"info","message":"HTTP request","method":"PUT","path":"/api/v1/emp/employees/6ad263cf04263f760c5bbb52","status":200,"timestamp":"2026-10-16T17:50:07.339Z","userId":"6ad263cc04263f760c5bbb4f"}
+{"durationMs":7,"ip":"127.0.0.1","level":"warn","message":"HTTP request","method":"POST","path":"/api/v1/emp/employees","status":409,"timestamp":"2026-10-16T17:50:07.363Z","userId":"6ad263cc04263f760c5bbb4f"}
+{"fields":["salary","date_of_joining","position","department","last_name","email"],"level":"warn","message":"Validation failed","method":"POST","path":"/api/v1/emp/employees","timestamp":"2026-10-16T17:50:07.384Z"}
+{"durationMs":4,"ip":"127.0.0.1","level":"warn","message":"HTTP request","method":"POST","path":"/api/v1/emp/employees","status":400,"timestamp":"2026-10-16T17:50:07.385Z","userId":"6ad263cc04263f760c5bbb4f"}
+{"fields":["email"],"level":"warn","message":"Validation failed","method":"POST","path":"/api/v1/emp/employees","timestamp":"2026-10-16T17:50:07.405Z"}
+{"durationMs":5,"ip":"127.0.0.1","level":"warn","message":"HTTP request","method":"POST","path":"/api/v1/emp/employees","status":400,"timestamp":"2026-10-16T17:50:07.406Z","userId":"6ad263cc04263f760c5bbb4f"}
+{"fields":["salary"],"level":"warn","message":"Validation failed","method":"POST","path":"/api/v1/emp/employees","timestamp":"2026-10-16T17:50:07.425Z"}
+{"durationMs":4,"ip":"127.0.0.1","level":"warn","message":"HTTP request","method":"POST","path":"/api/v1/emp/employees","status":400,"timestamp":"2026-10-16T17:50:07.425Z","userId":"6ad263cc04263f760c5bbb4f"}
+{"fields":["date_of_joining"],"level":"warn","message":"Validation failed","method":"POST","path":"/api/v1/emp/employees","timestamp":"2026-10-16T17:50:07.444Z"}
+{"durationMs":5,"ip":"127.0.0.1","level":"warn","message":"HTTP request","method":"POST","path":"/api/v1/emp/employees","status":400,"timestamp":"2026-10-16T17:50:07.445Z","userId":"6ad263cc04263f760c5bbb4f"}
+{"fields":["user"],"level":"warn","message":"Validation failed","method":"POST","path":"/api/v1/emp/employees","timestamp":"2026-10-16T17:50:07.464Z"}
+{"durationMs":5,"ip":"127.0.0.1","level":"warn","message":"HTTP request","method":"POST","path":"/api/v1/emp/employees","status":400,"timestamp":"2026-10-16T17:50:07.465Z","userId":"6ad263cc04263f760c5bbb4f"}
+{"fields":["eid"],"level":"warn","message":"Validation failed","method":"GET","path":"/api/v1/emp/employees/not-a-valid-id","timestamp":"2026-10-16T17:50:07.486Z"}
+{"durationMs":3,"ip":"127.0.0.1","level":"warn","message":"HTTP request","method":"GET","path":"/api/v1/emp/employees/not-a-valid-id","status":400,"timestamp":"2026-10-16T17:50:07.486Z","userId":"6ad263cc04263f760c5bbb4f"}
+{"durationMs":4,"ip":"127.0.0.1","level":"warn","message":"HTTP request","method":"GET","path":"/api/v1/emp/employees/507f1f77bcf86cd799439011","status":404,"timestamp":"2026-10-16T17:50:07.507Z","userId":"6ad263cc04263f760c5bbb4f"}
+{"ip":"127.0.0.1","level":"warn","message":"Authentication failed","method":"GET","path":"/api/v1/emp/employees","reason":"missing token","timestamp":"2026-10-16T17:50:07.524Z"}
+{"durationMs":1,"ip":"127.0.0.1","level":"warn","message":"HTTP request","method":"GET","path":"/api/v1/emp/employees","status":401,"timestamp":"2026-10-16T17:50:07.524Z"}
+{"ip":"127.0.0.1","level":"warn","message":"Authentication failed","method":"POST","path":"/api/v1/emp/employees","reason":"missing token","timestamp":"2026-10-16T17:50:07.541Z"}
+{"durationMs":1,"ip":"127.0.0.1","level":"warn","message":"HTTP request","method":"POST","path":"/api/v1/emp/employees","status":401,"timestamp":"2026-10-16T17:50:07.541Z"}
+{"ip":"127.0.0.1","level":"warn","message":"Authentication failed","method":"GET","path":"/api/v1/emp/employees","reason":"invalid token","timestamp":"2026-10-16T17:50:07.555Z"}
+{"durationMs":1,"ip":"127.0.0.1","level":"warn","message":"HTTP request","method":"GET","path":"/api/v1/emp/employees","status":401,"timestamp":"2026-10-16T17:50:07.556Z"}
+{"ip":"127.0.0.1","level":"warn","message":"Authentication failed","method":"GET","path":"/api/v1/emp/employees","reason":"invalid token","timestamp":"2026-10-16T17:50:07.573Z"}
+{"durationMs":1,"ip":"127.0.0.1","level":"warn","message":"HTTP request","method":"GET","path":"/api/v1/emp/employees","status":401,"timestamp":"2026-10-16T17:50:07.574Z"}
+{"employeeId":"6ad263cf04263f760c5bbb54","level":"info","message":"Employee created","timestamp":"2026-10-16T17:50:07.595Z","userId":"6ad263cc04263f760c5bbb50"}
+{"durationMs":5,"ip":"127.0.0.1","level":"info","message":"HTTP request","method":"POST","path":"/api/v1/emp/employees","status":201,"timestamp":"2026-10-16T17:50:07.596Z","userId":"6ad263cc04263f760c5bbb50"}
+{"durationMs":5,"ip":"127.0.0.1","level":"info","message":"HTTP request","method":"GET","path":"/api/v1/emp/employees","status":200,"timestamp":"2026-10-16T17:50:07.616Z","userId":"6ad263cc04263f760c5bbb50"}
+{"employeeId":"6ad263cf04263f760c5bbb54","level":"warn","message":"Authorization failed: employee belongs to another user","timestamp":"2026-10-16T17:50:07.638Z","userId":"6ad263cc04263f760c5bbb4f"}
+{"durationMs":4,"ip":"127.0.0.1","level":"warn","message":"HTTP request","method":"GET","path":"/api/v1/emp/employees/6ad263cf04263f760c5bbb54","status":403,"timestamp":"2026-10-16T17:50:07.638Z","userId":"6ad263cc04263f760c5bbb4f"}
+{"employeeId":"6ad263cf04263f760c5bbb54","level":"warn","message":"Authorization failed: employee belongs to another user","timestamp":"2026-10-16T17:50:07.657Z","userId":"6ad263cc04263f760c5bbb4f"}
+{"durationMs":5,"ip":"127.0.0.1","level":"warn","message":"HTTP request","method":"PUT","path":"/api/v1/emp/employees/6ad263cf04263f760c5bbb54","status":403,"timestamp":"2026-10-16T17:50:07.658Z","userId":"6ad263cc04263f760c5bbb4f"}
+{"employeeId":"6ad263cf04263f760c5bbb54","level":"warn","message":"Authorization failed: employee belongs to another user","timestamp":"2026-10-16T17:50:07.677Z","userId":"6ad263cc04263f760c5bbb4f"}
+{"durationMs":5,"ip":"127.0.0.1","level":"warn","message":"HTTP request","method":"DELETE","path":"/api/v1/emp/employees?eid=6ad263cf04263f760c5bbb54","status":403,"timestamp":"2026-10-16T17:50:07.678Z","userId":"6ad263cc04263f760c5bbb4f"}
+{"employeeId":"6ad263cf04263f760c5bbb52","level":"warn","message":"Authorization failed: employee belongs to another user","timestamp":"2026-10-16T17:50:07.696Z","userId":"6ad263cc04263f760c5bbb50"}
+{"durationMs":4,"ip":"127.0.0.1","level":"warn","message":"HTTP request","method":"GET","path":"/api/v1/emp/employees/6ad263cf04263f760c5bbb52","status":403,"timestamp":"2026-10-16T17:50:07.696Z","userId":"6ad263cc04263f760c5bbb50"}
+{"employeeId":"6ad263cf04263f760c5bbb52","level":"warn","message":"Authorization failed: employee belongs to another user","timestamp":"2026-10-16T17:50:07.720Z","userId":"6ad263cc04263f760c5bbb50"}
+{"durationMs":5,"ip":"127.0.0.1","level":"warn","message":"HTTP request","method":"PUT","path":"/api/v1/emp/employees/6ad263cf04263f760c5bbb52","status":403,"timestamp":"2026-10-16T17:50:07.720Z","userId":"6ad263cc04263f760c5bbb50"}
+{"employeeId":"6ad263cf04263f760c5bbb52","level":"warn","message":"Authorization failed: employee belongs to another user","timestamp":"2026-10-16T17:50:07.740Z","userId":"6ad263cc04263f760c5bbb50"}
+{"durationMs":4,"ip":"127.0.0.1","level":"warn","message":"HTTP request","method":"DELETE","path":"/api/v1/emp/employees?eid=6ad263cf04263f760c5bbb52","status":403,"timestamp":"2026-10-16T17:50:07.740Z","userId":"6ad263cc04263f760c5bbb50"}
+{"durationMs":4,"ip":"127.0.0.1","level":"info","message":"HTTP request","method":"GET","path":"/api/v1/emp/employees/6ad263cf04263f760c5bbb54","status":200,"timestamp":"2026-10-16T17:50:07.760Z","userId":"6ad263cc04263f760c5bbb50"}
+{"employeeId":"6ad263cf04263f760c5bbb52","level":"info","message":"Employee deleted","timestamp":"2026-10-16T17:50:07.783Z","userId":"6ad263cc04263f760c5bbb4f"}
+{"durationMs":6,"ip":"127.0.0.1","level":"info","message":"HTTP request","method":"DELETE","path":"/api/v1/emp/employees?eid=6ad263cf04263f760c5bbb52","status":204,"timestamp":"2026-10-16T17:50:07.784Z","userId":"6ad263cc04263f760c5bbb4f"}
+{"durationMs":4,"ip":"127.0.0.1","level":"warn","message":"HTTP request","method":"GET","path":"/api/v1/emp/employees/6ad263cf04263f760c5bbb52","status":404,"timestamp":"2026-10-16T17:50:07.805Z","userId":"6ad263cc04263f760c5bbb4f"}
+{"fields":["eid"],"level":"warn","message":"Validation failed","method":"DELETE","path":"/api/v1/emp/employees","timestamp":"2026-10-16T17:50:07.824Z"}
+{"durationMs":3,"ip":"127.0.0.1","level":"warn","message":"HTTP request","method":"DELETE","path":"/api/v1/emp/employees","status":400,"timestamp":"2026-10-16T17:50:07.825Z","userId":"6ad263cc04263f760c5bbb4f"}
+{"employeeId":"6ad263cf04263f760c5bbb54","level":"info","message":"Employee deleted","timestamp":"2026-10-16T17:50:07.849Z","userId":"6ad263cc04263f760c5bbb50"}
+{"durationMs":6,"ip":"127.0.0.1","level":"info","message":"HTTP request","method":"DELETE","path":"/api/v1/emp/employees?eid=6ad263cf04263f760c5bbb54","status":204,"timestamp":"2026-10-16T17:50:07.850Z","userId":"6ad263cc04263f760c5bbb50"}
+{"durationMs":1,"ip":"127.0.0.1","level":"warn","message":"HTTP request","method":"GET","path":"/api/v1/does-not-exist","status":404,"timestamp":"2026-10-16T17:50:07.871Z"}
+{"identifier":"usera_demo","level":"warn","message":"Login failed","reason":"wrong password","timestamp":"2026-10-16T17:50:09.185Z"}
+{"durationMs":386,"ip":"127.0.0.1","level":"warn","message":"HTTP request","method":"POST","path":"/api/v1/user/login","status":401,"timestamp":"2026-10-16T17:50:09.186Z"}
+{"identifier":"usera_demo","level":"warn","message":"Login failed","reason":"wrong password","timestamp":"2026-10-16T17:50:09.642Z"}
+{"durationMs":402,"ip":"127.0.0.1","level":"warn","message":"HTTP request","method":"POST","path":"/api/v1/user/login","status":401,"timestamp":"2026-10-16T17:50:09.643Z"}
+{"ip":"127.0.0.1","level":"warn","limiter":"login","message":"Rate limit exceeded","method":"POST","path":"/api/v1/user/login","timestamp":"2026-10-16T17:50:09.671Z"}
+{"durationMs":1,"ip":"127.0.0.1","level":"warn","message":"HTTP request","method":"POST","path":"/api/v1/user/login","status":429,"timestamp":"2026-10-16T17:50:09.672Z"}
+{"ip":"127.0.0.1","level":"warn","limiter":"login","message":"Rate limit exceeded","method":"POST","path":"/api/v1/user/login","timestamp":"2026-10-16T17:50:09.692Z"}
+{"durationMs":1,"ip":"127.0.0.1","level":"warn","message":"HTTP request","method":"POST","path":"/api/v1/user/login","status":429,"timestamp":"2026-10-16T17:50:09.693Z"}

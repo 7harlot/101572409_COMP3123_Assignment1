@@ -3,6 +3,7 @@ const helmet = require('helmet');
 const requestLogger = require('./middleware/requestLogger');
 const notFound = require('./middleware/notFound');
 const errorHandler = require('./middleware/errorHandler');
+const { apiLimiter } = require('./middleware/rateLimiters');
 const healthRoutes = require('./routes/healthRoutes');
 const userRoutes = require('./routes/userRoutes');
 const employeeRoutes = require('./routes/employeeRoutes');
@@ -18,6 +19,7 @@ app.use(requestLogger);
 app.use(express.json({ limit: '10kb' })); // small limit: no endpoint needs a big body
 
 app.use('/health', healthRoutes);
+app.use('/api', apiLimiter); // general limit for all API traffic (login/signup also have a stricter one)
 app.use('/api/v1/user', userRoutes);
 app.use('/api/v1/emp', employeeRoutes);
 

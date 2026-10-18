@@ -1,5 +1,6 @@
 const { body, param, query, checkExact } = require('express-validator');
 const ApiError = require('../utils/ApiError');
+const logger = require('../utils/logger');
 
 const MAX_SALARY = 10_000_000; // sanity cap so typos like 50000000000 are rejected
 const NAME_PATTERN = /^[\p{L}][\p{L} '.-]*$/u; // letters in any language, spaces, apostrophes, dots, dashes
@@ -68,6 +69,7 @@ const updateEmployeeRules = checkExact(
 // whole-body rule would make checkExact treat every field as allowed and leak into matchedData().
 function requireAtLeastOneField(req, res, next) {
     if (!req.body || Object.keys(req.body).length === 0) {
+        logger.warn('Validation failed', { method: req.method, path: req.originalUrl, fields: ['body'] });
         return next(new ApiError(400, 'Validation failed', [
             { field: 'body', message: 'Request body must contain at least one field to update' },
         ]));

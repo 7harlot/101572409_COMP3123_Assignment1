@@ -25,7 +25,7 @@ function validateRequest(req, res, next) {
     logger.warn('Validation failed', {
         method: req.method,
         path: req.originalUrl,
-        fields: details.map((detail) => detail.field),
+        fields: [...new Set(details.map((detail) => detail.field))], // a field can fail several rules; list it once
     });
 
     next(new ApiError(400, 'Validation failed', details));
