@@ -1,0 +1,14 @@
+# Dependencies are reinstalled with `npm install`, never committed
+node_modules/
+
+# Real secrets live here. Only .env.example (with placeholders) is committed.
+.env
+
+# Generated log files. logs/.gitkeep keeps the folder; logs/sample.log is the committed evidence.
+logs/*.log
+!logs/sample.log
+
+# OS / zip junk
+.DS_Store
+Thumbs.db
+__MACOSX/
